@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EFEFEF">
+
+    <!-- 国旗を表示する ImageView -->
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        />
+
+    <!-- 選択肢を表示する GridLayout -->
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/option1"
+            android:padding="10dp"
+            android:layout_margin="2dp" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/option2"
+            android:padding="10dp"
+            android:layout_margin="2dp" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/option3"
+            android:padding="10dp"
+            android:layout_margin="2dp" />
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/option4"
+            android:padding="10dp"
+            android:layout_margin="2dp" />
+    </GridLayout>
+</LinearLayout>

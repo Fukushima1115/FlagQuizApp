@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="2dp"
+    android:background="#EFEFEF"
+    >
+
+    <!-- 残念メッセージ -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_over"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 正解数表示 -->
+    <TextView
+        android:id="@+id/correctCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="18sp" />
+
+    <!-- 不正解国旗 -->
+    <ImageView
+        android:id="@+id/incorrectFlagImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/incorrect_flag" />
+
+    <!-- 不正解国名 -->
+    <TextView
+        android:id="@+id/countryNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/incorrect_country_name_placeholder" />
+
+
+    <!-- タイトルに戻るボタン -->
+    <Button
+        android:id="@+id/returnToTitleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_title" />
+</LinearLayout>
